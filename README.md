@@ -13,5 +13,5 @@ You should create one R script called run_analysis.R that does the following.
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Project details 
-run_analysis.R - R scrip to perform analysis
-CodeBook.md -  A code book that describes the variables, the data, and any transformations or work that  performed to clean up the data.
+*run_analysis.R - R scrip to perform analysis
+*CodeBook.md -  A code book that describes the variables, the data, and any transformations or work that  performed to clean up the data.

@@ -29,7 +29,7 @@ This script will download the file in your working directory.
 
 * final_data_table$activityName : Change the acivity name from number to activity name.
 
-## 4. Uses descriptive activity names to name the activities in the data set.
+## 4. Appropriately labels the data set with descriptive variable names. 
 * t= time 
 * f= frequency measurements.
 * Body = related to body movement.
@@ -39,7 +39,7 @@ This script will download the file in your working directory.
 * Jerk = sudden movement acceleration.
 * Mag = magnitude of movement.
 
-## 5. Uses descriptive activity names to name the activities in the data set.
+## 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
  * Tidy data can be found in Tidy_Data.txt
 

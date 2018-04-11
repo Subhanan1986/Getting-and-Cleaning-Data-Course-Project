@@ -21,3 +21,26 @@ This script will download the file in your working directory.
 * data_Train : Data from X_test.txt
 * final_data_table : Final merge table of data.
 
+## 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+* dataFeaturesMeanStd : Vector of only mean and std labels extracted from 2nd column of features
+* final_data_table : Only contain mean and std variables
+
+## 3. Uses descriptive activity names to name the activities in the data set.
+
+* final_data_table$activityName : Change the acivity name from number to activity name.
+
+## 4. Uses descriptive activity names to name the activities in the data set.
+* t= time 
+* f= frequency measurements.
+* Body = related to body movement.
+* Gravity = acceleration of gravity.
+* Acc = accelerometer measurement.
+* Gyro = gyroscopic measurements.
+* Jerk = sudden movement acceleration.
+* Mag = magnitude of movement.
+
+## 5. Uses descriptive activity names to name the activities in the data set.
+
+ * Tidy data can be found in Tidy_Data.txt
+
+

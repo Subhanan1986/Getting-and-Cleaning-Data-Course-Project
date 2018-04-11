@@ -58,5 +58,19 @@ final_data_table<- subset(final_data_table,select=dataFeaturesMeanStd)
 final_data_table <- merge(activity_level, final_data_table , by= "activityNum")
 final_data_table$activityName <- as.character(final_data_table$activityName)
 
+#4. Appropriately labels the data set with descriptive variable names
+
+names(final_data_table)<-gsub("std()", "SD", names(final_data_table))
+names(final_data_table)<-gsub("mean()", "MEAN", names(final_data_table))
+names(final_data_table)<-gsub("^t", "time", names(final_data_table))
+names(final_data_table)<-gsub("^f", "frequency", names(final_data_table))
+names(final_data_table)<-gsub("Acc", "Accelerometer", names(final_data_table))
+names(final_data_table)<-gsub("Gyro", "Gyroscope", names(final_data_table))
+names(final_data_table)<-gsub("Mag", "Magnitude", names(final_data_table))
+names(final_data_table)<-gsub("BodyBody", "Body", names(final_data_table))
+
+#5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+write.table(final_data_table, "Tidy_Data.txt", row.name=FALSE)
+
 
 
